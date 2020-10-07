@@ -1,0 +1,15 @@
+{
+	"name": "pockemon",
+	"version": "1.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"start:front": "yarn workspace @pokemon/front-app start",
+		"start:back": "yarn workspace @pokemon/server-api build:dev"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*"
+		]
+	}
+}

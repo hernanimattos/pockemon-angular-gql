@@ -1,0 +1,13 @@
+<div class="card-car-container ">
+  <div class="card-header">
+    <img [src]="imageUrl"
+         alt="">
+  </div>
+  <a [routerLink]="['/card', id]">
+    Detalhes
+  </a>
+  <div class="details"
+       *ngIf="moreDetails">
+    more-details
+  </div>
+</div>

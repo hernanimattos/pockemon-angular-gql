@@ -1,0 +1,21 @@
+type Card {
+  id: String
+  name: String
+  imageUrl: String
+  types: [String]
+  hp: String
+  attacks: [Attack]
+  weaknesses: [Weaknesses]
+}
+
+type Attack {
+  cost: [String]
+  name: String
+  damage: String
+  convertedEnergyCost: Int
+}
+
+type Weaknesses {
+  type: String
+  value: String
+}

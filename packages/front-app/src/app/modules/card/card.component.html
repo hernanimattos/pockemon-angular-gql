@@ -1,0 +1,4 @@
+<app-c-card [name]="(store$ | async).cardsReducer.card.name"
+            [imageUrl]="(store$ | async).cardsReducer.card.imageUrl"
+            [moreDetails]="true">
+</app-c-card>

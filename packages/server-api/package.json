@@ -1,0 +1,43 @@
+{
+  "name": "@pokemon/server-api",
+  "version": "1.0.0",
+  "description": "Portfolio api",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn webpack",
+    "start:dev": "yarn webpack --watch",
+    "build:dev": "nodemon index.js",
+    "dev": "yarn start:dev && build:dev",
+    "lint": "eslint --ext .js src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "axios": "^0.19.0",
+    "cloudinary": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "gql-loader": "^1.0.0",
+    "graphql": "^14.6.0",
+    "graphql-import-node": "^0.0.4",
+    "graphql-tools": "^4.0.7",
+    "mongoose": "^5.9.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import-graphql": "^2.7.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "lodash": "^4.17.15",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

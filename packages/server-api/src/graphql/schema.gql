@@ -1,0 +1,5 @@
+type Query {
+  getCards: [Card]!
+  getCardById(_id: String): Card!
+  searchCard(term: String): [Card]!
+}
