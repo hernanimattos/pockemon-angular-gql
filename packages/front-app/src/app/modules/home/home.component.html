@@ -1,8 +1,12 @@
 <app-search-bar (search)="searchCard($event)"></app-search-bar>
 
-<app-c-card *ngFor="let card of (store$ | async).cardsReducer.cards; index as i;"
-            [name]="card.name"
-            [imageUrl]="card.imageUrl"
-            [id]="card.id"
-            [moreDetails]="true">
-</app-c-card>
+<div class="main-container">
+  <app-c-card
+    *ngFor="let card of (store$ | async).cardsReducer.cards; index as i"
+    [name]="card.name"
+    [imageUrl]="card.imageUrl"
+    [id]="card.id"
+    [moreDetails]="true"
+  >
+  </app-c-card>
+</div>
